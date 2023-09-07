@@ -21,7 +21,7 @@ public class GUI implements ActionListener{
 
         JButton button = new JButton("Click me");
         button.addActionListener(this);
-        label = new JLabel("Number of clicks");
+        label = new JLabel("Number of clicks: ");
 
         panel = new JPanel();
         panel.setBorder(BorderFactory.createEmptyBorder(30, 30, 10, 30));
@@ -31,7 +31,7 @@ public class GUI implements ActionListener{
 
         frame.add(panel, BorderLayout.CENTER);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.setTitle("Our GUI");
+        frame.setTitle("Click Counter");
         frame.pack();
         frame.setVisible(true);
     }
